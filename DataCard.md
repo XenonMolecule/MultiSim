@@ -1,22 +1,64 @@
-# MultiSim
+---
+license: mit
+language:
+- en
+- fr
+- ru
+- ja
+- it
+- da
+- es
+- de
+- pt
+- sl
+- ur
+- eu
+task_categories:
+- summarization
+- text2text-generation
+- text-generation
+pretty_name: MultiSim
+tags:
+- medical
+- legal
+- wikipedia
+- encyclopedia
+- science
+- literature
+- news
+- websites
+size_categories:
+- 1M<n<10M
+---
+
+# Dataset Card for MultiSim Benchmark
+
+## Dataset Description
+
+- **Repository:https://github.com/XenonMolecule/MultiSim/tree/main** 
+- **Paper:https://aclanthology.org/2023.acl-long.269/ https://arxiv.org/pdf/2305.15678.pdf** 
+- **Point of Contact: michaeljryan@stanford.edu** 
+
+### Dataset Summary
+
+The MultiSim benchmark is a growing collection of text simplification datasets targeted at sentence simplification in several languages.  Currently, the benchmark spans 12 languages.
 
 ![Figure showing four complex and simple sentence pairs.  One pair in English, one in Japanese, one in Urdu, and one in Russian.  The English complex sentence reads "He settled in London, devoting himself chiefly to practical teaching." which is paired with the simple sentence "He lived in London. He was a teacher."](MultiSimEx.png "MultiSim Example")
 
-Code and Data for using the MultiSim Benchmark from the ACL 2023 paper [Revisiting non-English Text Simplification: A Unified Multilingual Benchmark](https://aclanthology.org/2023.acl-long.269/)
+### Supported Tasks
 
-# HuggingFace
+- Sentence Simplification
 
-The data is available on HuggingFace [here](https://huggingface.co/datasets/MichaelR207/MultiSim)!
+### Usage
 
-## Usage
 ```python
 from datasets import load_dataset
 
 dataset = load_dataset("MichaelR207/MultiSim")
 ```
 
-# Citation
-If you use this benchmark please cite our paper:
+### Citation
+If you use this benchmark, please cite our [paper](https://aclanthology.org/2023.acl-long.269/):
 ```
 @inproceedings{ryan-etal-2023-revisiting,
     title = "Revisiting non-{E}nglish Text Simplification: A Unified Multilingual Benchmark",
@@ -34,51 +76,131 @@ If you use this benchmark please cite our paper:
 }
 ```
 
-# Contact
-**Michael Ryan**: [Scholar](https://scholar.google.com/citations?user=8APGEEkAAAAJ&hl=en) | [Twitter](http://twitter.com/michaelryan207) | [Github](https://github.com/XenonMolecule) | [LinkedIn](https://www.linkedin.com/in/michael-ryan-207/) | [Research Gate](https://www.researchgate.net/profile/Michael-Ryan-86) | [Personal Website](http://michaelryan.tech/) | [michaeljryan@gatech.edu](mailto://michaeljryan@gatech.edu)
+### Contact
 
-# Data Availability
-## Public Datasets
-Most of the public datasets are available as a part of this MultiSim Repo.  A few are still pending availability.  For all resources we provide alternative download links.
-| Dataset | Language | Availability in MultiSim Repo | Alternative Link |
-|---|---|---|---|
-| ASSET  | English | Available | https://huggingface.co/datasets/asset |
-| WikiAuto | English | Available | https://huggingface.co/datasets/wiki_auto |
-| CLEAR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
-| WikiLargeFR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
-| GEOLino | German | Available | https://github.com/Jmallins/ZEST-data |
-| TextComplexityDE | German | Available | https://github.com/babaknaderi/TextComplexityDE |
-| AdminIT | Italian | Available | https://github.com/Unipisa/admin-It |
-| Simpitiki | Italian | Available | https://github.com/dhfbk/simpitiki# |
-| PaCCSS-IT | Italian | Available | http://www.italianlp.it/resources/paccss-it-parallel-corpus-of-complex-simple-sentences-for-italian/ |
-| Terence and Teacher | Italian | Available | http://www.italianlp.it/resources/terence-and-teacher/ |
-| Easy Japanese | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t15 |
-| Easy Japanese Extended | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t23 |
-| RuAdapt Encyclopedia | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
-| RuAdapt Fairytales | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
-| RuSimpleSentEval | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
-| RuWikiLarge | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
-| SloTS | Slovene | Available | https://github.com/sabina-skubic/text-simplification-slovene |
-| SimplifyUR | Urdu | Pending | https://github.com/harisbinzia/SimplifyUR |
-| PorSimples | Brazilian Portuguese | Available | [sandra@icmc.usp.br](mailto:sandra@icmc.usp.br) |
+**Michael Ryan**: [Scholar](https://scholar.google.com/citations?user=8APGEEkAAAAJ&hl=en) | [Twitter](http://twitter.com/michaelryan207) | [Github](https://github.com/XenonMolecule) | [LinkedIn](https://www.linkedin.com/in/michael-ryan-207/) | [Research Gate](https://www.researchgate.net/profile/Michael-Ryan-86) | [Personal Website](http://michaelryan.tech/) | [michaeljryan@stanford.edu](mailto://michaeljryan@stanford.edu)
 
-## On Request Datasets
-The authors of the original papers must be contacted for on request datasets.  Contact information for the authors of each dataset is provided below.
-| Dataset | Language | Contact |
-|---|---|---|
-| CBST | Basque | http://www.ixa.eus/node/13007?language=en <br/> [itziar.gonzalezd@ehu.eus](mailto:itziar.gonzalezd@ehu.eus) |
-| DSim | Danish | [sk@eyejustread.com](mailto:sk@eyejustread.com) |
-| Newsela EN | English | [https://newsela.com/data/](https://newsela.com/data/) |
-| Newsela ES | Spanish | [https://newsela.com/data/](https://newsela.com/data/) |
-| German News | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
-| Simple German | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
-| Simplext | Spanish | [horacio.saggion@upf.edu](mailto:horacio.saggion@upf.edu) |
-| RuAdapt Literature | Russian | Partially Available: https://github.com/Digital-Pushkin-Lab/RuAdapt <br/> Full Dataset: [anna.dmitrieva@helsinki.fi](mailto:anna.dmitrieva@helsinki.fi) |
+### Languages
 
-# Specific Citations
-Please cite the individual datasets that you use within the MultiSim benchmark as appropriate.  Proper bibtex attributions for each of the datasets are included below
+- English
+- French
+- Russian
+- Japanese
+- Italian
+- Danish (on request)
+- Spanish (on request)
+- German
+- Brazilian Portuguese
+- Slovene
+- Urdu (on request)
+- Basque (on request)
 
-## AdminIT
+## Dataset Structure
+
+### Data Instances
+
+MultiSim is a collection of 27 existing datasets:
+- AdminIT
+- ASSET
+- CBST
+- CLEAR
+- DSim
+- Easy Japanese
+- Easy Japanese Extended
+- GEOLino
+- German News
+- Newsela EN/ES
+- PaCCSS-IT
+- PorSimples
+- RSSE
+- RuAdapt Encyclopedia
+- RuAdapt Fairytales
+- RuAdapt Literature
+- RuWikiLarge
+- SIMPITIKI
+- Simple German
+- Simplext
+- SimplifyUR
+- SloTS
+- Teacher
+- Terence
+- TextComplexityDE
+- WikiAuto
+- WikiLargeFR
+
+![Table 1: Important properties of text simplification parallel corpora](Table1.png "Table 1")
+
+### Data Fields
+
+In the train set, you will only find `original` and `simple` sentences.  In the validation and test sets you may find `simple1`, `simple2`, ... `simpleN` because a given sentence can have multiple reference simplifications (useful in SARI and BLEU calculations)
+
+### Data Splits
+
+The dataset is split into a train, validation, and test set.
+
+![Table 2: MultiSim splits. *Original splits preserved](Table2.png "Table 2")
+
+## Dataset Creation
+
+### Curation Rationale
+
+I hope that collecting all of these independently useful resources for text simplification together into one benchmark will encourage multilingual work on text simplification!
+
+### Source Data
+
+#### Initial Data Collection and Normalization
+
+Data is compiled from the 27 existing datasets that comprise the MultiSim Benchmark.  For details on each of the resources please see Appendix A in the [paper](https://aclanthology.org/2023.acl-long.269.pdf).
+
+#### Who are the source language producers?
+
+Each dataset has different sources.  At a high level the sources are: Automatically Collected (ex. Wikipedia, Web data), Manually Collected (ex. annotators asked to simplify sentences), Target Audience Resources (ex. Newsela News Articles), or Translated (ex. Machine translations of existing datasets).
+These sources can be seen in Table 1 pictured above (Section: `Dataset Structure/Data Instances`) and further discussed in section 3 of the [paper](https://aclanthology.org/2023.acl-long.269.pdf).  Appendix A of the paper has details on specific resources.
+
+### Annotations
+
+#### Annotation process
+
+Annotators writing simplifications (only for some datasets) typically follow an annotation guideline.  Some example guidelines come from [here](https://dl.acm.org/doi/10.1145/1410140.1410191), [here](https://link.springer.com/article/10.1007/s11168-006-9011-1), and [here](https://link.springer.com/article/10.1007/s10579-017-9407-6).
+
+#### Who are the annotators?
+
+See Table 1 (Section: `Dataset Structure/Data Instances`) for specific annotators per dataset.  At a high level the annotators are: writers, translators, teachers, linguists, journalists, crowdworkers, experts, news agencies, medical students, students, writers, and researchers.
+
+### Personal and Sensitive Information
+
+No dataset should contain personal or sensitive information.  These were previously collected resources primarily collected from news sources, wikipedia, science communications, etc. and were not identified to have personally identifiable information.
+
+## Considerations for Using the Data
+
+### Social Impact of Dataset
+
+We hope this dataset will make a greatly positive social impact as text simplification is a task that serves children, second language learners, and people with reading/cognitive disabilities.  By publicly releasing a dataset in 12 languages we hope to serve these global communities.
+One negative and unintended use case for this data would be reversing the labels to make a "text complification" model.  We beleive the benefits of releasing this data outweigh the harms and hope that people use the dataset as intended.
+
+### Discussion of Biases
+
+There may be biases of the annotators involved in writing the simplifications towards how they believe a simpler sentence should be written.  Additionally annotators and editors have the choice of what information does not make the cut in the simpler sentence introducing information importance bias.
+
+### Other Known Limitations
+
+Some of the included resources were automatically collected or machine translated.  As such not every sentence is perfectly aligned.  Users are recommended to use such individual resources with caution.
+
+## Additional Information
+
+### Dataset Curators
+
+**Michael Ryan**: [Scholar](https://scholar.google.com/citations?user=8APGEEkAAAAJ&hl=en) | [Twitter](http://twitter.com/michaelryan207) | [Github](https://github.com/XenonMolecule) | [LinkedIn](https://www.linkedin.com/in/michael-ryan-207/) | [Research Gate](https://www.researchgate.net/profile/Michael-Ryan-86) | [Personal Website](http://michaelryan.tech/) | [michaeljryan@stanford.edu](mailto://michaeljryan@stanford.edu)
+
+### Licensing Information
+
+MIT License
+
+### Citation Information
+
+Please cite the individual datasets that you use within the MultiSim benchmark as appropriate. Proper bibtex attributions for each of the datasets are included below.
+
+#### AdminIT
 ```
 @inproceedings{miliani-etal-2022-neural,
     title = "Neural Readability Pairwise Ranking for Sentences in {I}talian Administrative Language",
@@ -97,7 +219,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
 }
 ```
 
-## ASSET
+#### ASSET
 ```
 @inproceedings{alva-manchego-etal-2020-asset,
     title = "{ASSET}: {A} Dataset for Tuning and Evaluation of Sentence Simplification Models with Multiple Rewriting Transformations",
@@ -116,7 +238,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "4668--4679",
 }
 ```
-## CBST
+#### CBST
 ```
 @article{10.1007/s10579-017-9407-6,
   title={{The corpus of Basque simplified texts (CBST)}},
@@ -129,7 +251,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   publisher={Springer}
 }
 ```
-## CLEAR
+#### CLEAR
 ```
 @inproceedings{grabar-cardon-2018-clear,
     title = "{CLEAR} {--} Simple Corpus for Medical {F}rench",
@@ -145,7 +267,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "3--9",
 }
 ```
-## DSim
+#### DSim
 ```
 @inproceedings{klerke-sogaard-2012-dsim,
     title = "{DS}im, a {D}anish Parallel Corpus for Text Simplification",
@@ -161,7 +283,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     abstract = "We present DSim, a new sentence aligned Danish monolingual parallel corpus extracted from 3701 pairs of news telegrams and corresponding professionally simplified short news articles. The corpus is intended for building automatic text simplification for adult readers. We compare DSim to different examples of monolingual parallel corpora, and we argue that this corpus is a promising basis for future development of automatic data-driven text simplification systems in Danish. The corpus contains both the collection of paired articles and a sentence aligned bitext, and we show that sentence alignment using simple tf*idf weighted cosine similarity scoring is on line with state―of―the―art when evaluated against a hand-aligned sample. The alignment results are compared to state of the art for English sentence alignment. We finally compare the source and simplified sides of the corpus in terms of lexical and syntactic characteristics and readability, and find that the one―to―many sentence aligned corpus is representative of the sentence simplifications observed in the unaligned collection of article pairs.",
 }
 ```
-## Easy Japanese
+#### Easy Japanese
 ```
 @inproceedings{maruyama-yamamoto-2018-simplified,
     title = "Simplified Corpus with Core Vocabulary",
@@ -175,7 +297,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     url = "https://aclanthology.org/L18-1185",
 }
 ```
-## Easy Japanese Extended
+#### Easy Japanese Extended
 ```
 @inproceedings{katsuta-yamamoto-2018-crowdsourced,
     title = "Crowdsourced Corpus of Sentence Simplification with Core Vocabulary",
@@ -189,7 +311,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     url = "https://aclanthology.org/L18-1072",
 }
 ```
-## GEOLino
+#### GEOLino
 ```
 @inproceedings{mallinson2020,
   title={Zero-Shot Crosslingual Sentence Simplification},
@@ -198,7 +320,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   booktitle={2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)}
 }
 ```
-## German News
+#### German News
 ```
 @inproceedings{sauberli-etal-2020-benchmarking,
     title = "Benchmarking Data-driven Automatic Text Simplification for {G}erman",
@@ -217,7 +339,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     ISBN = "979-10-95546-45-0",
 }
 ```
-## Newsela EN/ES
+#### Newsela EN/ES
 ```
 @article{xu-etal-2015-problems,
     title = "Problems in Current Text Simplification Research: New Data Can Help",
@@ -235,7 +357,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     abstract = "Simple Wikipedia has dominated simplification research in the past 5 years. In this opinion paper, we argue that focusing on Wikipedia limits simplification research. We back up our arguments with corpus analysis and by highlighting statements that other researchers have made in the simplification literature. We introduce a new simplification dataset that is a significant improvement over Simple Wikipedia, and present a novel quantitative-comparative approach to study the quality of simplification data resources.",
 }
 ```
-## PaCCSS-IT
+#### PaCCSS-IT
 ```
 @inproceedings{brunato-etal-2016-paccss,
     title = "{P}a{CCSS}-{IT}: A Parallel Corpus of Complex-Simple Sentences for Automatic Text Simplification",
@@ -253,7 +375,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "351--361",
 }
 ```
-## PorSimples
+#### PorSimples
 ```
 @inproceedings{aluisio-gasperin-2010-fostering,
     title = "Fostering Digital Inclusion and Accessibility: The {P}or{S}imples project for Simplification of {P}ortuguese Texts",
@@ -281,7 +403,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   isbn="978-3-642-16952-6"
 }
 ```
-## RSSE
+#### RSSE
 ```
 @inproceedings{sakhovskiy2021rusimplesenteval,
   title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
@@ -291,7 +413,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   year={2021}
 }
 ```
-## RuAdapt
+#### RuAdapt
 ```
 @inproceedings{Dmitrieva2021Quantitative,
   title={A quantitative study of simplification strategies in adapted texts for L2 learners of Russian},
@@ -316,7 +438,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     abstract = "Parallel language corpora where regular texts are aligned with their simplified versions can be used in both natural language processing and theoretical linguistic studies. They are essential for the task of automatic text simplification, but can also provide valuable insights into the characteristics that make texts more accessible and reveal strategies that human experts use to simplify texts. Today, there exist a few parallel datasets for English and Simple English, but many other languages lack such data. In this paper we describe our work on creating an aligned Russian-Simple Russian dataset composed of Russian literature texts adapted for learners of Russian as a foreign language. This will be the first parallel dataset in this domain, and one of the first Simple Russian datasets in general.",
 }
 ```
-## RuWikiLarge
+#### RuWikiLarge
 ```
 @inproceedings{sakhovskiy2021rusimplesenteval,
   title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
@@ -326,7 +448,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   year={2021}
 }
 ```
-## SIMPITIKI
+#### SIMPITIKI
 ```
 @article{tonelli2016simpitiki,
   title={SIMPITIKI: a Simplification corpus for Italian},
@@ -335,7 +457,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   year={2016}
 }
 ```
-## Simple German
+#### Simple German
 ```
 @inproceedings{battisti-etal-2020-corpus,
     title = "A Corpus for Automatic Readability Assessment and Text Simplification of {G}erman",
@@ -356,7 +478,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     ISBN = "979-10-95546-34-4",
 }
 ```
-## Simplext
+#### Simplext
 ```
 @article{10.1145/2738046,
     author = {Saggion, Horacio and \v{S}tajner, Sanja and Bott, Stefan and Mille, Simon and Rello, Luz and Drndarevic, Biljana},
@@ -376,7 +498,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     keywords = {Spanish, text simplification corpus, human evaluation, readability measures} 
 }
 ```
-## SimplifyUR
+#### SimplifyUR
 ```
 @inproceedings{qasmi-etal-2020-simplifyur,
     title = "{S}implify{UR}: Unsupervised Lexical Text Simplification for {U}rdu",
@@ -395,7 +517,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     ISBN = "979-10-95546-34-4",
 }
 ```
-## SloTS
+#### SloTS
 ```
 @misc{gorenc2022slovene,
 	 title = {Slovene text simplification dataset {SloTS}},
@@ -407,7 +529,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
 	 year = {2022}
 }
 ```
-## Terence and Teacher
+#### Terence and Teacher
 ```
 @inproceedings{brunato-etal-2015-design,
     title = "Design and Annotation of the First {I}talian Corpus for Text Simplification",
@@ -425,7 +547,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "31--41",
 }
 ```
-## TextComplexityDE
+#### TextComplexityDE
 ```
 @article{naderi2019subjective,
   title={Subjective Assessment of Text Complexity: A Dataset for German Language},
@@ -434,7 +556,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   year={2019}
 }
 ```
-## WikiAuto
+#### WikiAuto
 ```
 @inproceedings{acl/JiangMLZX20,
   author    = {Chao Jiang and
@@ -455,7 +577,7 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   url       = {https://www.aclweb.org/anthology/2020.acl-main.709/}
 }
 ```
-## WikiLargeFR
+#### WikiLargeFR
 ```
 @inproceedings{cardon-grabar-2020-french,
     title = "{F}rench Biomedical Text Simplification: When Small and Precise Helps",
@@ -472,3 +594,41 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     abstract = "We present experiments on biomedical text simplification in French. We use two kinds of corpora {--} parallel sentences extracted from existing health comparable corpora in French and WikiLarge corpus translated from English to French {--} and a lexicon that associates medical terms with paraphrases. Then, we train neural models on these parallel corpora using different ratios of general and specialized sentences. We evaluate the results with BLEU, SARI and Kandel scores. The results point out that little specialized data helps significantly the simplification.",
 }
 ```
+
+## Data Availability
+### Public Datasets
+Most of the public datasets are available as a part of this MultiSim Repo.  A few are still pending availability.  For all resources we provide alternative download links.
+| Dataset | Language | Availability in MultiSim Repo | Alternative Link |
+|---|---|---|---|
+| ASSET  | English | Available | https://huggingface.co/datasets/asset |
+| WikiAuto | English | Available | https://huggingface.co/datasets/wiki_auto |
+| CLEAR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
+| WikiLargeFR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
+| GEOLino | German | Available | https://github.com/Jmallins/ZEST-data |
+| TextComplexityDE | German | Available | https://github.com/babaknaderi/TextComplexityDE |
+| AdminIT | Italian | Available | https://github.com/Unipisa/admin-It |
+| Simpitiki | Italian | Available | https://github.com/dhfbk/simpitiki# |
+| PaCCSS-IT | Italian | Available | http://www.italianlp.it/resources/paccss-it-parallel-corpus-of-complex-simple-sentences-for-italian/ |
+| Terence and Teacher | Italian | Available | http://www.italianlp.it/resources/terence-and-teacher/ |
+| Easy Japanese | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t15 |
+| Easy Japanese Extended | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t23 |
+| RuAdapt Encyclopedia | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
+| RuAdapt Fairytales | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
+| RuSimpleSentEval | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
+| RuWikiLarge | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
+| SloTS | Slovene | Available | https://github.com/sabina-skubic/text-simplification-slovene |
+| SimplifyUR | Urdu | Pending | https://github.com/harisbinzia/SimplifyUR |
+| PorSimples | Brazilian Portuguese | Available | [sandra@icmc.usp.br](mailto:sandra@icmc.usp.br) |
+
+### On Request Datasets
+The authors of the original papers must be contacted for on request datasets.  Contact information for the authors of each dataset is provided below.
+| Dataset | Language | Contact |
+|---|---|---|
+| CBST | Basque | http://www.ixa.eus/node/13007?language=en <br/> [itziar.gonzalezd@ehu.eus](mailto:itziar.gonzalezd@ehu.eus) |
+| DSim | Danish | [sk@eyejustread.com](mailto:sk@eyejustread.com) |
+| Newsela EN | English | [https://newsela.com/data/](https://newsela.com/data/) |
+| Newsela ES | Spanish | [https://newsela.com/data/](https://newsela.com/data/) |
+| German News | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
+| Simple German | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
+| Simplext | Spanish | [horacio.saggion@upf.edu](mailto:horacio.saggion@upf.edu) |
+| RuAdapt Literature | Russian | Partially Available: https://github.com/Digital-Pushkin-Lab/RuAdapt <br/> Full Dataset: [anna.dmitrieva@helsinki.fi](mailto:anna.dmitrieva@helsinki.fi) |

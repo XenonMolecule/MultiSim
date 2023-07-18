@@ -1,6 +1,6 @@
 # Code
 
-This code is primarily included for anyone that wants to reproduce the experiments and analysis done in the paper.  The easiest way to actually use this dataset is to use the data from the `../data` folder, or from the [HuggingFace Repo](https://www.google.com) (coming soon!).
+This code is primarily included for anyone that wants to reproduce the experiments and analysis done in the paper.  The easiest way to actually use this dataset is to use the data from the `../data` folder, or from the [HuggingFace Repo](https://huggingface.co/datasets/MichaelR207/MultiSim).
 
 ## Organization
 
