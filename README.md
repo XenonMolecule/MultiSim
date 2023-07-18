@@ -67,6 +67,25 @@ The authors of the original papers must be contacted for on request datasets.  C
 # Specific Citations
 Please cite the individual datasets that you use within the MultiSim benchmark as appropriate.  Proper bibtex attributions for each of the datasets are included below
 
+## AdminIT
+```
+@inproceedings{miliani-etal-2022-neural,
+    title = "Neural Readability Pairwise Ranking for Sentences in {I}talian Administrative Language",
+    author = "Miliani, Martina  and
+      Auriemma, Serena  and
+      Alva-Manchego, Fernando  and
+      Lenci, Alessandro",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.aacl-main.63",
+    pages = "849--866",
+    abstract = "Automatic Readability Assessment aims at assigning a complexity level to a given text, which could help improve the accessibility to information in specific domains, such as the administrative one. In this paper, we investigate the behavior of a Neural Pairwise Ranking Model (NPRM) for sentence-level readability assessment of Italian administrative texts. To deal with data scarcity, we experiment with cross-lingual, cross- and in-domain approaches, and test our models on Admin-It, a new parallel corpus in the Italian administrative language, containing sentences simplified using three different rewriting strategies. We show that NPRMs are effective in zero-shot scenarios ({\textasciitilde}0.78 ranking accuracy), especially with ranking pairs containing simplifications produced by overall rewriting at the sentence-level, and that the best results are obtained by adding in-domain data (achieving perfect performance for such sentence pairs). Finally, we investigate where NPRMs failed, showing that the characteristics of the training data, rather than its size, have a bigger effect on a model{'}s performance.",
+}
+```
+
 ## ASSET
 ```
 @inproceedings{alva-manchego-etal-2020-asset,
@@ -86,25 +105,17 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "4668--4679",
 }
 ```
-## WikiAuto
+## CBST
 ```
-@inproceedings{acl/JiangMLZX20,
-  author    = {Chao Jiang and
-               Mounica Maddela and
-               Wuwei Lan and
-               Yang Zhong and
-               Wei Xu},
-  editor    = {Dan Jurafsky and
-               Joyce Chai and
-               Natalie Schluter and
-               Joel R. Tetreault},
-  title     = {Neural {CRF} Model for Sentence Alignment in Text Simplification},
-  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
-               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
-  pages     = {7943--7960},
-  publisher = {Association for Computational Linguistics},
-  year      = {2020},
-  url       = {https://www.aclweb.org/anthology/2020.acl-main.709/}
+@article{10.1007/s10579-017-9407-6,
+  title={{The corpus of Basque simplified texts (CBST)}},
+  author={Gonzalez-Dios, Itziar and Aranzabe, Mar{\'\i}a Jes{\'u}s and D{\'\i}az de Ilarraza, Arantza},
+  journal={Language Resources and Evaluation},
+  volume={52},
+  number={1},
+  pages={217--247},
+  year={2018},
+  publisher={Springer}
 }
 ```
 ## CLEAR
@@ -123,102 +134,20 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     pages = "3--9",
 }
 ```
-## WikiLargeFR
+## DSim
 ```
-@inproceedings{cardon-grabar-2020-french,
-    title = "{F}rench Biomedical Text Simplification: When Small and Precise Helps",
-    author = "Cardon, R{\'e}mi  and
-      Grabar, Natalia",
-    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
-    month = dec,
-    year = "2020",
-    address = "Barcelona, Spain (Online)",
-    publisher = "International Committee on Computational Linguistics",
-    url = "https://aclanthology.org/2020.coling-main.62",
-    doi = "10.18653/v1/2020.coling-main.62",
-    pages = "710--716",
-    abstract = "We present experiments on biomedical text simplification in French. We use two kinds of corpora {--} parallel sentences extracted from existing health comparable corpora in French and WikiLarge corpus translated from English to French {--} and a lexicon that associates medical terms with paraphrases. Then, we train neural models on these parallel corpora using different ratios of general and specialized sentences. We evaluate the results with BLEU, SARI and Kandel scores. The results point out that little specialized data helps significantly the simplification.",
-}
-```
-## GEOLino
-```
-@inproceedings{mallinson2020,
-  title={Zero-Shot Crosslingual Sentence Simplification},
-  author={Mallinson, Jonathan and Sennrich, Rico and Lapata, Mirella},
-  year={2020},
-  booktitle={2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)}
-}
-```
-## TextComplexityDE
-```
-@article{naderi2019subjective,
-  title={Subjective Assessment of Text Complexity: A Dataset for German Language},
-  author={Naderi, Babak and Mohtaj, Salar and Ensikat, Kaspar and M{\"o}ller, Sebastian},
-  journal={arXiv preprint arXiv:1904.07733},
-  year={2019}
-}
-```
-## AdminIT
-```
-@inproceedings{miliani-etal-2022-neural,
-    title = "Neural Readability Pairwise Ranking for Sentences in {I}talian Administrative Language",
-    author = "Miliani, Martina  and
-      Auriemma, Serena  and
-      Alva-Manchego, Fernando  and
-      Lenci, Alessandro",
-    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing",
-    month = nov,
-    year = "2022",
-    address = "Online only",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.aacl-main.63",
-    pages = "849--866",
-    abstract = "Automatic Readability Assessment aims at assigning a complexity level to a given text, which could help improve the accessibility to information in specific domains, such as the administrative one. In this paper, we investigate the behavior of a Neural Pairwise Ranking Model (NPRM) for sentence-level readability assessment of Italian administrative texts. To deal with data scarcity, we experiment with cross-lingual, cross- and in-domain approaches, and test our models on Admin-It, a new parallel corpus in the Italian administrative language, containing sentences simplified using three different rewriting strategies. We show that NPRMs are effective in zero-shot scenarios ({\textasciitilde}0.78 ranking accuracy), especially with ranking pairs containing simplifications produced by overall rewriting at the sentence-level, and that the best results are obtained by adding in-domain data (achieving perfect performance for such sentence pairs). Finally, we investigate where NPRMs failed, showing that the characteristics of the training data, rather than its size, have a bigger effect on a model{'}s performance.",
-}
-```
-## SIMPITIKI
-```
-@article{tonelli2016simpitiki,
-  title={SIMPITIKI: a Simplification corpus for Italian},
-  author={Tonelli, Sara and Aprosio, Alessio Palmero and Saltori, Francesca},
-  journal={Proceedings of CLiC-it},
-  year={2016}
-}
-```
-## PaCCSS-IT
-```
-@inproceedings{brunato-etal-2016-paccss,
-    title = "{P}a{CCSS}-{IT}: A Parallel Corpus of Complex-Simple Sentences for Automatic Text Simplification",
-    author = "Brunato, Dominique  and
-      Cimino, Andrea  and
-      Dell{'}Orletta, Felice  and
-      Venturi, Giulia",
-    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
-    month = nov,
-    year = "2016",
-    address = "Austin, Texas",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/D16-1034",
-    doi = "10.18653/v1/D16-1034",
-    pages = "351--361",
-}
-```
-## Terence and Teacher
-```
-@inproceedings{brunato-etal-2015-design,
-    title = "Design and Annotation of the First {I}talian Corpus for Text Simplification",
-    author = "Brunato, Dominique  and
-      Dell{'}Orletta, Felice  and
-      Venturi, Giulia  and
-      Montemagni, Simonetta",
-    booktitle = "Proceedings of the 9th Linguistic Annotation Workshop",
-    month = jun,
-    year = "2015",
-    address = "Denver, Colorado, USA",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/W15-1604",
-    doi = "10.3115/v1/W15-1604",
-    pages = "31--41",
+@inproceedings{klerke-sogaard-2012-dsim,
+    title = "{DS}im, a {D}anish Parallel Corpus for Text Simplification",
+    author = "Klerke, Sigrid  and
+      S{\o}gaard, Anders",
+    booktitle = "Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}'12)",
+    month = may,
+    year = "2012",
+    address = "Istanbul, Turkey",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "http://www.lrec-conf.org/proceedings/lrec2012/pdf/270_Paper.pdf",
+    pages = "4015--4018",
+    abstract = "We present DSim, a new sentence aligned Danish monolingual parallel corpus extracted from 3701 pairs of news telegrams and corresponding professionally simplified short news articles. The corpus is intended for building automatic text simplification for adult readers. We compare DSim to different examples of monolingual parallel corpora, and we argue that this corpus is a promising basis for future development of automatic data-driven text simplification systems in Danish. The corpus contains both the collection of paired articles and a sentence aligned bitext, and we show that sentence alignment using simple tf*idf weighted cosine similarity scoring is on line with state―of―the―art when evaluated against a hand-aligned sample. The alignment results are compared to state of the art for English sentence alignment. We finally compare the source and simplified sides of the corpus in terms of lexical and syntactic characteristics and readability, and find that the one―to―many sentence aligned corpus is representative of the sentence simplifications observed in the unaligned collection of article pairs.",
 }
 ```
 ## Easy Japanese
@@ -249,93 +178,68 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     url = "https://aclanthology.org/L18-1072",
 }
 ```
-## RuAdapt
+## GEOLino
 ```
-@inproceedings{Dmitrieva2021Quantitative,
-  title={A quantitative study of simplification strategies in adapted texts for L2 learners of Russian},
-  author={Dmitrieva, Anna and Laposhina, Antonina and Lebedeva, Maria},
-  booktitle={Proceedings of the International Conference “Dialogue},
-  pages={191--203},
-  year={2021}
+@inproceedings{mallinson2020,
+  title={Zero-Shot Crosslingual Sentence Simplification},
+  author={Mallinson, Jonathan and Sennrich, Rico and Lapata, Mirella},
+  year={2020},
+  booktitle={2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)}
 }
 ```
+## German News
 ```
-@inproceedings{dmitrieva-tiedemann-2021-creating,
-    title = "Creating an Aligned {R}ussian Text Simplification Dataset from Language Learner Data",
-    author = {Dmitrieva, Anna  and
-      Tiedemann, J{\"o}rg},
-    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
-    month = apr,
-    year = "2021",
-    address = "Kiyv, Ukraine",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.bsnlp-1.8",
-    pages = "73--79",
-    abstract = "Parallel language corpora where regular texts are aligned with their simplified versions can be used in both natural language processing and theoretical linguistic studies. They are essential for the task of automatic text simplification, but can also provide valuable insights into the characteristics that make texts more accessible and reveal strategies that human experts use to simplify texts. Today, there exist a few parallel datasets for English and Simple English, but many other languages lack such data. In this paper we describe our work on creating an aligned Russian-Simple Russian dataset composed of Russian literature texts adapted for learners of Russian as a foreign language. This will be the first parallel dataset in this domain, and one of the first Simple Russian datasets in general.",
-}
-```
-## RSSE
-```
-@inproceedings{sakhovskiy2021rusimplesenteval,
-  title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
-  author={Sakhovskiy, Andrey and Izhevskaya, Alexandra and Pestova, Alena and Tutubalina, Elena and Malykh, Valentin and Smurov, Ivana and Artemova, Ekaterina},
-  booktitle={Proceedings of the International Conference “Dialogue},
-  pages={607--617},
-  year={2021}
-}
-```
-## RuWikiLarge
-```
-@inproceedings{sakhovskiy2021rusimplesenteval,
-  title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
-  author={Sakhovskiy, Andrey and Izhevskaya, Alexandra and Pestova, Alena and Tutubalina, Elena and Malykh, Valentin and Smurov, Ivana and Artemova, Ekaterina},
-  booktitle={Proceedings of the International Conference “Dialogue},
-  pages={607--617},
-  year={2021}
-}
-```
-## SloTS
-```
-@misc{gorenc2022slovene,
-	 title = {Slovene text simplification dataset {SloTS}},
-	 author = {Gorenc, Sabina and Robnik-{\v S}ikonja, Marko},
-	 url = {http://hdl.handle.net/11356/1682},
-	 note = {Slovenian language resource repository {CLARIN}.{SI}},
-	 copyright = {Creative Commons - Attribution 4.0 International ({CC} {BY} 4.0)},
-	 issn = {2820-4042},
-	 year = {2022}
-}
-```
-## SimplifyUR
-```
-@inproceedings{qasmi-etal-2020-simplifyur,
-    title = "{S}implify{UR}: Unsupervised Lexical Text Simplification for {U}rdu",
-    author = "Qasmi, Namoos Hayat  and
-      Zia, Haris Bin  and
-      Athar, Awais  and
-      Raza, Agha Ali",
-    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+@inproceedings{sauberli-etal-2020-benchmarking,
+    title = "Benchmarking Data-driven Automatic Text Simplification for {G}erman",
+    author = {S{\"a}uberli, Andreas  and
+      Ebling, Sarah  and
+      Volk, Martin},
+    booktitle = "Proceedings of the 1st Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI)",
     month = may,
     year = "2020",
     address = "Marseille, France",
     publisher = "European Language Resources Association",
-    url = "https://aclanthology.org/2020.lrec-1.428",
-    pages = "3484--3489",
+    url = "https://aclanthology.org/2020.readi-1.7",
+    pages = "41--48",
+    abstract = "Automatic text simplification is an active research area, and there are first systems for English, Spanish, Portuguese, and Italian. For German, no data-driven approach exists to this date, due to a lack of training data. In this paper, we present a parallel corpus of news items in German with corresponding simplifications on two complexity levels. The simplifications have been produced according to a well-documented set of guidelines. We then report on experiments in automatically simplifying the German news items using state-of-the-art neural machine translation techniques. We demonstrate that despite our small parallel corpus, our neural models were able to learn essential features of simplified language, such as lexical substitutions, deletion of less relevant words and phrases, and sentence shortening.",
     language = "English",
-    ISBN = "979-10-95546-34-4",
+    ISBN = "979-10-95546-45-0",
 }
 ```
-## CBST
+## Newsela EN/ES
 ```
-@article{10.1007/s10579-017-9407-6,
-  title={{The corpus of Basque simplified texts (CBST)}},
-  author={Gonzalez-Dios, Itziar and Aranzabe, Mar{\'\i}a Jes{\'u}s and D{\'\i}az de Ilarraza, Arantza},
-  journal={Language Resources and Evaluation},
-  volume={52},
-  number={1},
-  pages={217--247},
-  year={2018},
-  publisher={Springer}
+@article{xu-etal-2015-problems,
+    title = "Problems in Current Text Simplification Research: New Data Can Help",
+    author = "Xu, Wei  and
+      Callison-Burch, Chris  and
+      Napoles, Courtney",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "3",
+    year = "2015",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/Q15-1021",
+    doi = "10.1162/tacl_a_00139",
+    pages = "283--297",
+    abstract = "Simple Wikipedia has dominated simplification research in the past 5 years. In this opinion paper, we argue that focusing on Wikipedia limits simplification research. We back up our arguments with corpus analysis and by highlighting statements that other researchers have made in the simplification literature. We introduce a new simplification dataset that is a significant improvement over Simple Wikipedia, and present a novel quantitative-comparative approach to study the quality of simplification data resources.",
+}
+```
+## PaCCSS-IT
+```
+@inproceedings{brunato-etal-2016-paccss,
+    title = "{P}a{CCSS}-{IT}: A Parallel Corpus of Complex-Simple Sentences for Automatic Text Simplification",
+    author = "Brunato, Dominique  and
+      Cimino, Andrea  and
+      Dell{'}Orletta, Felice  and
+      Venturi, Giulia",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1034",
+    doi = "10.18653/v1/D16-1034",
+    pages = "351--361",
 }
 ```
 ## PorSimples
@@ -366,57 +270,58 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
   isbn="978-3-642-16952-6"
 }
 ```
-## DSim
+## RSSE
 ```
-@inproceedings{klerke-sogaard-2012-dsim,
-    title = "{DS}im, a {D}anish Parallel Corpus for Text Simplification",
-    author = "Klerke, Sigrid  and
-      S{\o}gaard, Anders",
-    booktitle = "Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}'12)",
-    month = may,
-    year = "2012",
-    address = "Istanbul, Turkey",
-    publisher = "European Language Resources Association (ELRA)",
-    url = "http://www.lrec-conf.org/proceedings/lrec2012/pdf/270_Paper.pdf",
-    pages = "4015--4018",
-    abstract = "We present DSim, a new sentence aligned Danish monolingual parallel corpus extracted from 3701 pairs of news telegrams and corresponding professionally simplified short news articles. The corpus is intended for building automatic text simplification for adult readers. We compare DSim to different examples of monolingual parallel corpora, and we argue that this corpus is a promising basis for future development of automatic data-driven text simplification systems in Danish. The corpus contains both the collection of paired articles and a sentence aligned bitext, and we show that sentence alignment using simple tf*idf weighted cosine similarity scoring is on line with state―of―the―art when evaluated against a hand-aligned sample. The alignment results are compared to state of the art for English sentence alignment. We finally compare the source and simplified sides of the corpus in terms of lexical and syntactic characteristics and readability, and find that the one―to―many sentence aligned corpus is representative of the sentence simplifications observed in the unaligned collection of article pairs.",
+@inproceedings{sakhovskiy2021rusimplesenteval,
+  title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
+  author={Sakhovskiy, Andrey and Izhevskaya, Alexandra and Pestova, Alena and Tutubalina, Elena and Malykh, Valentin and Smurov, Ivana and Artemova, Ekaterina},
+  booktitle={Proceedings of the International Conference “Dialogue},
+  pages={607--617},
+  year={2021}
 }
 ```
-## Newsela EN/ES
+## RuAdapt
 ```
-@article{xu-etal-2015-problems,
-    title = "Problems in Current Text Simplification Research: New Data Can Help",
-    author = "Xu, Wei  and
-      Callison-Burch, Chris  and
-      Napoles, Courtney",
-    journal = "Transactions of the Association for Computational Linguistics",
-    volume = "3",
-    year = "2015",
-    address = "Cambridge, MA",
-    publisher = "MIT Press",
-    url = "https://aclanthology.org/Q15-1021",
-    doi = "10.1162/tacl_a_00139",
-    pages = "283--297",
-    abstract = "Simple Wikipedia has dominated simplification research in the past 5 years. In this opinion paper, we argue that focusing on Wikipedia limits simplification research. We back up our arguments with corpus analysis and by highlighting statements that other researchers have made in the simplification literature. We introduce a new simplification dataset that is a significant improvement over Simple Wikipedia, and present a novel quantitative-comparative approach to study the quality of simplification data resources.",
+@inproceedings{Dmitrieva2021Quantitative,
+  title={A quantitative study of simplification strategies in adapted texts for L2 learners of Russian},
+  author={Dmitrieva, Anna and Laposhina, Antonina and Lebedeva, Maria},
+  booktitle={Proceedings of the International Conference “Dialogue},
+  pages={191--203},
+  year={2021}
 }
 ```
-## German News
 ```
-@inproceedings{sauberli-etal-2020-benchmarking,
-    title = "Benchmarking Data-driven Automatic Text Simplification for {G}erman",
-    author = {S{\"a}uberli, Andreas  and
-      Ebling, Sarah  and
-      Volk, Martin},
-    booktitle = "Proceedings of the 1st Workshop on Tools and Resources to Empower People with REAding DIfficulties (READI)",
-    month = may,
-    year = "2020",
-    address = "Marseille, France",
-    publisher = "European Language Resources Association",
-    url = "https://aclanthology.org/2020.readi-1.7",
-    pages = "41--48",
-    abstract = "Automatic text simplification is an active research area, and there are first systems for English, Spanish, Portuguese, and Italian. For German, no data-driven approach exists to this date, due to a lack of training data. In this paper, we present a parallel corpus of news items in German with corresponding simplifications on two complexity levels. The simplifications have been produced according to a well-documented set of guidelines. We then report on experiments in automatically simplifying the German news items using state-of-the-art neural machine translation techniques. We demonstrate that despite our small parallel corpus, our neural models were able to learn essential features of simplified language, such as lexical substitutions, deletion of less relevant words and phrases, and sentence shortening.",
-    language = "English",
-    ISBN = "979-10-95546-45-0",
+@inproceedings{dmitrieva-tiedemann-2021-creating,
+    title = "Creating an Aligned {R}ussian Text Simplification Dataset from Language Learner Data",
+    author = {Dmitrieva, Anna  and
+      Tiedemann, J{\"o}rg},
+    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
+    month = apr,
+    year = "2021",
+    address = "Kiyv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.bsnlp-1.8",
+    pages = "73--79",
+    abstract = "Parallel language corpora where regular texts are aligned with their simplified versions can be used in both natural language processing and theoretical linguistic studies. They are essential for the task of automatic text simplification, but can also provide valuable insights into the characteristics that make texts more accessible and reveal strategies that human experts use to simplify texts. Today, there exist a few parallel datasets for English and Simple English, but many other languages lack such data. In this paper we describe our work on creating an aligned Russian-Simple Russian dataset composed of Russian literature texts adapted for learners of Russian as a foreign language. This will be the first parallel dataset in this domain, and one of the first Simple Russian datasets in general.",
+}
+```
+## RuWikiLarge
+```
+@inproceedings{sakhovskiy2021rusimplesenteval,
+  title={{RuSimpleSentEval-2021 shared task:} evaluating sentence simplification for Russian},
+  author={Sakhovskiy, Andrey and Izhevskaya, Alexandra and Pestova, Alena and Tutubalina, Elena and Malykh, Valentin and Smurov, Ivana and Artemova, Ekaterina},
+  booktitle={Proceedings of the International Conference “Dialogue},
+  pages={607--617},
+  year={2021}
+}
+```
+## SIMPITIKI
+```
+@article{tonelli2016simpitiki,
+  title={SIMPITIKI: a Simplification corpus for Italian},
+  author={Tonelli, Sara and Aprosio, Alessio Palmero and Saltori, Francesca},
+  journal={Proceedings of CLiC-it},
+  year={2016}
 }
 ```
 ## Simple German
@@ -458,5 +363,101 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     articleno = {14},
     numpages = {36},
     keywords = {Spanish, text simplification corpus, human evaluation, readability measures} 
+}
+```
+## SimplifyUR
+```
+@inproceedings{qasmi-etal-2020-simplifyur,
+    title = "{S}implify{UR}: Unsupervised Lexical Text Simplification for {U}rdu",
+    author = "Qasmi, Namoos Hayat  and
+      Zia, Haris Bin  and
+      Athar, Awais  and
+      Raza, Agha Ali",
+    booktitle = "Proceedings of the Twelfth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.428",
+    pages = "3484--3489",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+}
+```
+## SloTS
+```
+@misc{gorenc2022slovene,
+	 title = {Slovene text simplification dataset {SloTS}},
+	 author = {Gorenc, Sabina and Robnik-{\v S}ikonja, Marko},
+	 url = {http://hdl.handle.net/11356/1682},
+	 note = {Slovenian language resource repository {CLARIN}.{SI}},
+	 copyright = {Creative Commons - Attribution 4.0 International ({CC} {BY} 4.0)},
+	 issn = {2820-4042},
+	 year = {2022}
+}
+```
+## Terence and Teacher
+```
+@inproceedings{brunato-etal-2015-design,
+    title = "Design and Annotation of the First {I}talian Corpus for Text Simplification",
+    author = "Brunato, Dominique  and
+      Dell{'}Orletta, Felice  and
+      Venturi, Giulia  and
+      Montemagni, Simonetta",
+    booktitle = "Proceedings of the 9th Linguistic Annotation Workshop",
+    month = jun,
+    year = "2015",
+    address = "Denver, Colorado, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W15-1604",
+    doi = "10.3115/v1/W15-1604",
+    pages = "31--41",
+}
+```
+## TextComplexityDE
+```
+@article{naderi2019subjective,
+  title={Subjective Assessment of Text Complexity: A Dataset for German Language},
+  author={Naderi, Babak and Mohtaj, Salar and Ensikat, Kaspar and M{\"o}ller, Sebastian},
+  journal={arXiv preprint arXiv:1904.07733},
+  year={2019}
+}
+```
+## WikiAuto
+```
+@inproceedings{acl/JiangMLZX20,
+  author    = {Chao Jiang and
+               Mounica Maddela and
+               Wuwei Lan and
+               Yang Zhong and
+               Wei Xu},
+  editor    = {Dan Jurafsky and
+               Joyce Chai and
+               Natalie Schluter and
+               Joel R. Tetreault},
+  title     = {Neural {CRF} Model for Sentence Alignment in Text Simplification},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational
+               Linguistics, {ACL} 2020, Online, July 5-10, 2020},
+  pages     = {7943--7960},
+  publisher = {Association for Computational Linguistics},
+  year      = {2020},
+  url       = {https://www.aclweb.org/anthology/2020.acl-main.709/}
+}
+```
+## WikiLargeFR
+```
+@inproceedings{cardon-grabar-2020-french,
+    title = "{F}rench Biomedical Text Simplification: When Small and Precise Helps",
+    author = "Cardon, R{\'e}mi  and
+      Grabar, Natalia",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.62",
+    doi = "10.18653/v1/2020.coling-main.62",
+    pages = "710--716",
+    abstract = "We present experiments on biomedical text simplification in French. We use two kinds of corpora {--} parallel sentences extracted from existing health comparable corpora in French and WikiLarge corpus translated from English to French {--} and a lexicon that associates medical terms with paraphrases. Then, we train neural models on these parallel corpora using different ratios of general and specialized sentences. We evaluate the results with BLEU, SARI and Kandel scores. The results point out that little specialized data helps significantly the simplification.",
 }
 ```
