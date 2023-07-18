@@ -7,15 +7,19 @@ Code and Data for using the MultiSim Benchmark from the ACL 2023 paper [Revisiti
 # Citation
 If you use this benchmark please cite our paper:
 ```
-Official ACL Citation Coming Soon
-```
-ArXiv Citation:
-```
-@article{ryan2023revisiting,
-  title={Revisiting non-English Text Simplification: A Unified Multilingual Benchmark},
-  author={Ryan, Michael J and Naous, Tarek and Xu, Wei},
-  journal={arXiv preprint arXiv:2305.15678},
-  year={2023}
+@inproceedings{ryan-etal-2023-revisiting,
+    title = "Revisiting non-{E}nglish Text Simplification: A Unified Multilingual Benchmark",
+    author = "Ryan, Michael  and
+      Naous, Tarek  and
+      Xu, Wei",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.269",
+    pages = "4898--4927",
+    abstract = "Recent advancements in high-quality, large-scale English resources have pushed the frontier of English Automatic Text Simplification (ATS) research. However, less work has been done on multilingual text simplification due to the lack of a diverse evaluation benchmark that covers complex-simple sentence pairs in many languages. This paper introduces the MultiSim benchmark, a collection of 27 resources in 12 distinct languages containing over 1.7 million complex-simple sentence pairs. This benchmark will encourage research in developing more effective multilingual text simplification models and evaluation metrics. Our experiments using MultiSim with pre-trained multilingual language models reveal exciting performance improvements from multilingual training in non-English settings. We observe strong performance from Russian in zero-shot cross-lingual transfer to low-resource languages. We further show that few-shot prompting with BLOOM-176b achieves comparable quality to reference simplifications outperforming fine-tuned models in most languages. We validate these findings through human evaluation.",
 }
 ```
 
@@ -31,7 +35,7 @@ Most of the public datasets are available as a part of this MultiSim Repo.  A fe
 | WikiAuto | English | Available | https://huggingface.co/datasets/wiki_auto |
 | CLEAR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
 | WikiLargeFR | French | Available | http://natalia.grabar.free.fr/resources.php#remi |
-| GEOLino | German | Pending | https://github.com/Jmallins/ZEST-data |
+| GEOLino | German | Available | https://github.com/Jmallins/ZEST-data |
 | TextComplexityDE | German | Available | https://github.com/babaknaderi/TextComplexityDE |
 | AdminIT | Italian | Available | https://github.com/Unipisa/admin-It |
 | Simpitiki | Italian | Available | https://github.com/dhfbk/simpitiki# |
@@ -39,26 +43,29 @@ Most of the public datasets are available as a part of this MultiSim Repo.  A fe
 | Terence and Teacher | Italian | Available | http://www.italianlp.it/resources/terence-and-teacher/ |
 | Easy Japanese | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t15 |
 | Easy Japanese Extended | Japanese | Available | https://www.jnlp.org/GengoHouse/snow/t23 |
-| RuAdapt | Russian | Pending | https://github.com/Digital-Pushkin-Lab/RuAdapt |
-| RuSimpleSentEval | Russian | Pending | https://github.com/dialogue-evaluation/RuSimpleSentEval |
+| RuAdapt Encyclopedia | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
+| RuAdapt Fairytales | Russian | Available | https://github.com/Digital-Pushkin-Lab/RuAdapt |
+| RuSimpleSentEval | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
+| RuWikiLarge | Russian | Available | https://github.com/dialogue-evaluation/RuSimpleSentEval |
 | SloTS | Slovene | Available | https://github.com/sabina-skubic/text-simplification-slovene |
-| SimplifyUR | Urdu | Pending | https://github.com/harisbinzia/SimplifyUR |                                                    |
+| SimplifyUR | Urdu | Pending | https://github.com/harisbinzia/SimplifyUR |
+| PorSimples | Brazilian Portuguese | Available | [sandra@icmc.usp.br](mailto:sandra@icmc.usp.br) |
 
 ## On Request Datasets
 The authors of the original papers must be contacted for on request datasets.  Contact information for the authors of each dataset is provided below.
 | Dataset | Language | Contact |
 |---|---|---|
-| CBST | Basque | [itziar.gonzalezd@ehu.eus](mailto:itziar.gonzalezd@ehu.eus) |
-| PorSimples | Brazilian Portuguese | [sandra@icmc.usp.br](mailto:sandra@icmc.usp.br) |
+| CBST | Basque | http://www.ixa.eus/node/13007?language=en <br/> [itziar.gonzalezd@ehu.eus](mailto:itziar.gonzalezd@ehu.eus) |
 | DSim | Danish | [sk@eyejustread.com](mailto:sk@eyejustread.com) |
 | Newsela EN | English | [https://newsela.com/data/](https://newsela.com/data/) |
 | Newsela ES | Spanish | [https://newsela.com/data/](https://newsela.com/data/) |
 | German News | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
 | Simple German | German | [ebling@cl.uzh.ch](mailto:ebling@cl.uzh.ch) |
 | Simplext | Spanish | [horacio.saggion@upf.edu](mailto:horacio.saggion@upf.edu) |
+| RuAdapt Literature | Russian | Partially Available: https://github.com/Digital-Pushkin-Lab/RuAdapt <br/> Full Dataset: [anna.dmitrieva@helsinki.fi](mailto:anna.dmitrieva@helsinki.fi) |
 
 # Specific Citations
-Please cite the individual datasets that you use within the MultiSim benchmark as appropriate.  Proper bibtex attributions for each of the datasets is included below
+Please cite the individual datasets that you use within the MultiSim benchmark as appropriate.  Proper bibtex attributions for each of the datasets are included below
 
 ## ASSET
 ```
@@ -344,6 +351,19 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/W10-1607",
     pages = "46--53",
+}
+```
+```
+@inproceedings{10.1007/978-3-642-16952-6_31,
+  author="Scarton, Carolina and Gasperin, Caroline and Aluisio, Sandra",
+  editor="Kuri-Morales, Angel and Simari, Guillermo R.",
+  title="Revisiting the Readability Assessment of Texts in Portuguese",
+  booktitle="Advances in Artificial Intelligence -- IBERAMIA 2010",
+  year="2010",
+  publisher="Springer Berlin Heidelberg",
+  address="Berlin, Heidelberg",
+  pages="306--315",
+  isbn="978-3-642-16952-6"
 }
 ```
 ## DSim
