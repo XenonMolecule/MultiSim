@@ -1,0 +1,28 @@
+fugashi[unidic-lite]
+fuzzywuzzy[speedup]
+statsmodels
+pdfminer
+urduhack
+transformers
+evaluate
+sentencepiece
+scikit-learn
+matplotlib
+torch
+nltk
+beautifulsoup4
+pycryptodome
+
+accelerate
+datasets >= 1.8.0
+sentencepiece != 0.1.92
+protobuf
+rouge-score
+py7zr
+torch >= 1.3
+evaluate
+sacrebleu
+sacremoses
+
+scikit-learn
+matplotlib

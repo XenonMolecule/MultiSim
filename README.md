@@ -2,7 +2,7 @@
 
 ![Figure showing four complex and simple sentence pairs.  One pair in English, one in Japanese, one in Urdu, and one in Russian.  The English complex sentence reads "He settled in London, devoting himself chiefly to practical teaching." which is paired with the simple sentence "He lived in London. He was a teacher."](MultiSimEx.png "MultiSim Example")
 
-Code and Data for using the MultiSim Benchmark from the ACL 2023 paper [Revisiting non-English Text Simplification: A Unified Multilingual Benchmark](https://arxiv.org/pdf/2305.15678.pdf) [UNDER CONSTRUCTION]
+Code and Data for using the MultiSim Benchmark from the ACL 2023 paper [Revisiting non-English Text Simplification: A Unified Multilingual Benchmark](https://aclanthology.org/2023.acl-long.269/)
 
 # Citation
 If you use this benchmark please cite our paper:
@@ -24,7 +24,7 @@ If you use this benchmark please cite our paper:
 ```
 
 # Contact
-**Michael Ryan**: [Scholar](https://scholar.google.com/citations?user=8APGEEkAAAAJ&hl=en) | [Github](https://github.com/XenonMolecule) | [LinkedIn](https://www.linkedin.com/in/michael-ryan-207/) | [Research Gate](https://www.researchgate.net/profile/Michael-Ryan-86) | [Personal Website](http://michaelryan.tech/) | [michaeljryan@gatech.edu](mailto://michaeljryan@gatech.edu)
+**Michael Ryan**: [Scholar](https://scholar.google.com/citations?user=8APGEEkAAAAJ&hl=en) | [Twitter](http://twitter.com/michaelryan207) | [Github](https://github.com/XenonMolecule) | [LinkedIn](https://www.linkedin.com/in/michael-ryan-207/) | [Research Gate](https://www.researchgate.net/profile/Michael-Ryan-86) | [Personal Website](http://michaelryan.tech/) | [michaeljryan@gatech.edu](mailto://michaeljryan@gatech.edu)
 
 # Data Availability
 ## Public Datasets
