@@ -472,3 +472,6 @@ Please cite the individual datasets that you use within the MultiSim benchmark a
     abstract = "We present experiments on biomedical text simplification in French. We use two kinds of corpora {--} parallel sentences extracted from existing health comparable corpora in French and WikiLarge corpus translated from English to French {--} and a lexicon that associates medical terms with paraphrases. Then, we train neural models on these parallel corpora using different ratios of general and specialized sentences. We evaluate the results with BLEU, SARI and Kandel scores. The results point out that little specialized data helps significantly the simplification.",
 }
 ```
+
+# Acknowledgement
+This research is supported in part by the NSF awards IIS-2144493 and IIS-2112633, ODNI and IARPA via the BETTER program (contract 2019- 19051600004) and the HIATUS program (contract 2022-22072200004). The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of NSF, ODNI, IARPA, or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for governmental purposes, notwithstanding any copyright annotation therein.
