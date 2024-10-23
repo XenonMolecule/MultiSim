@@ -12,7 +12,7 @@ The data is available on HuggingFace [here](https://huggingface.co/datasets/Mich
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("MichaelR207/MultiSim")
+dataset = load_dataset("MichaelR207/MultiSimV2")
 ```
 
 # Citation
