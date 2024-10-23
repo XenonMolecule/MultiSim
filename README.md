@@ -6,7 +6,7 @@ Code and Data for using the MultiSim Benchmark from the ACL 2023 paper [Revisiti
 
 # HuggingFace
 
-The data is available on HuggingFace [here](https://huggingface.co/datasets/MichaelR207/MultiSim)!
+The data is available on HuggingFace [here](https://huggingface.co/datasets/MichaelR207/MultiSimV2)!
 
 ## Usage
 ```python
